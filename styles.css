@@ -23,51 +23,285 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu li {
-    display: inline-block;
-    margin: 0 15px;
     position: relative;
+    margin: 0 15px;
 }
 
-.menu li a {
+/* Menu links */
+.menu li a, .menu li span {
     text-decoration: none;
     color: white;
     font-size: 18px;
     padding: 12px 18px;
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
+    display: inline-block;
 }
 
-.menu li a:hover {
+/* Hover effect */
+.menu li a:hover, .menu li span:hover {
     background-color: #e67e22;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Dropdown menu */
-.dropdown-content {
+.dropdown-menu {
     display: none;
     position: absolute;
     background-color: #333;
     min-width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    top: 100%;
+    left: 0;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 0;
 }
 
-.dropdown-content a {
-    color: white;
-    padding: 12px;
+.dropdown-menu li {
     display: block;
-    text-align: left;
-    text-decoration: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+
+.dropdown-menu li a:hover {
     background-color: #e67e22;
 }
 
-.menu li:hover .dropdown-content {
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/* Image Gallery Container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+/* Medium-Sized Images */
+.gallery-image {
+    width: 250px; /* Medium-sized */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* Equipment Page */
+.equipment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.equipment-item {
+    background-color: #222;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.equipment-item:hover {
+    transform: scale(1.05);
+}
+
+.equipment-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.equipment-item h2 {
+    color: #e67e22;
+}
+
+.equipment-item p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.equipment-item a {
+    text-decoration: none;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.equipment-item a:hover {
+    background-color: #d35400;
+}
+
+/* Centered profile image */
+.profile-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-image {
+    width: 250px; /* Medium-sized image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Travel Gallery Section */
+.travel-gallery {
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Container for travel images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Image Box (for image + text) */
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Small Travel Icons */
+.small-icon {
+    width: 100px;  /* Small icon size */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.small-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Image Caption (Text Below Image) */
+.image-caption {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #e67e22;
+}
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: #e67e22;
+}
+
+/* Contact Form Container */
+.contact-form-container {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Form Groups (Spacing for Inputs) */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields & Textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Send Button */
+button {
+    margin-top: 15px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #d35400;
 }

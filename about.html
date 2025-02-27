@@ -1,34 +1,48 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Ahsan</title>
+    <title>Ahsan’s Home Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <nav>
+
+    <!-- Navigation Bar -->
+    <nav>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li>
-                <a href="#">Gallery</a>
-                <div class="dropdown-content">
-                    <a href="travel-gallery.html">Travel</a>
-                    <a href="portrait-gallery.html">Portrait</a>
-                </div>
+            <li class="dropdown">
+                <span>Gallery</span>
+                <ul class="dropdown-menu">
+                    <li><a href="travel-gallery.html">Travel</a></li>
+                    <li><a href="portrait-gallery.html">Portrait</a></li>
+                </ul>
             </li>
             <li><a href="equipment.html">Equipment</a></li>
-            <li>
-                <a href="#">Contact</a>
-                <div class="dropdown-content">
-                    <a href="contact.html">General Contact</a>
-                    <a href="appointment.html">Appointment</a>
-                </div>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <h1>About Ahsan</h1>
-    <p>Welcome to my portfolio! I am a travel and portrait photographer...</p>
+    <p style="font-size: 32px;">About Ahsan Ali</p>
+
+    <p style="font-size: 20px;">I am a student at CUNY City Tech, and my major is Computer Systems.</p>
+
+    <!-- Profile Image -->
+    <div class="profile-container">
+        <img src="./photos/about.JPG" class="profile-image">
+    </div>
+
+    <p style="font-size: 20px;">
+        I chose to make this website because I want to share my passion in photography. <br>
+        Before Instagram and other social media sites, there used to be a site called Flickr. <br>
+        I really liked the UI and wanted to replicate something similar. <br>
+        Here you can not only view a portion of photos I've taken through the years,<br>
+        you can also view the tools and equipment I use. Please note, this is a hobby of mine and by no means am I a professional.<br>
+        Hope you enjoy my work!
+    </p>
+
 </body>
 </html>

@@ -1,34 +1,57 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portrait Gallery</title>
+    <title>Ahsan’s Photo Page Portaits</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <nav>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li>
-                <a href="#">Gallery</a>
-                <div class="dropdown-content">
-                    <a href="travel-gallery.html">Travel</a>
-                    <a href="portrait-gallery.html">Portrait</a>
-                </div>
+            <li class="dropdown">
+                <span>Gallery</span>
+                <ul class="dropdown-menu">
+                    <li><a href="travel-gallery.html">Travel</a></li>
+                    <li><a href="portrait-gallery.html">Portrait</a></li>
+                </ul>
             </li>
             <li><a href="equipment.html">Equipment</a></li>
-            <li>
-                <a href="#">Contact</a>
-                <div class="dropdown-content">
-                    <a href="contact.html">General Contact</a>
-                    <a href="appointment.html">Appointment</a>
-                </div>
-            </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <h1>Portrait Photography</h1>
     <p>Discover my best portrait work.</p>
+
+     <!-- Travel Gallery Section -->
+    <div class="travel-gallery">
+        <div class="image-container">
+            <div class="image-box">
+                <img class="small-icon" src="./photos/img1.jpg">
+            </div>
+            <div class="image-box">
+                <img class="small-icon" src="./photos/img4.jpg">
+            </div>
+            <div class="image-box">
+                <img class="small-icon" src="./photos/img5.jpg">
+            </div>
+            <div class="image-box">
+                <img class="small-icon" src="./photos/img6.jpg">
+            </div>
+            <div class="image-box">
+                <img class="small-icon" src="./photos/img8.JPG">
+            </div>
+            <div class="image-box">
+                <img class="small-icon" src="./photos/portrait1.JPG">
+            </div>
+            <div class="image-box">
+                <img class="small-icon" src="./photos/portrait2.JPG">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
